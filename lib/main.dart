@@ -1,4 +1,5 @@
 import 'package:awaaz/features/home/ui/home_page.dart';
+import 'package:awaaz/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: ThemeData(useMaterial3: true),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const OnBoardingScreen(),
     );
   }
 }

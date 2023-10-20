@@ -1,5 +1,4 @@
 import 'package:awaaz/features/auth/ui/login_page.dart';
-import 'package:awaaz/features/home/ui/home_page.dart';
 import 'package:awaaz/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

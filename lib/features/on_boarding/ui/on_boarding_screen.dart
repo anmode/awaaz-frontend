@@ -1,5 +1,4 @@
 import 'package:awaaz/constants/colors.dart';
-import 'package:awaaz/constants/dimensions.dart';
 import 'package:awaaz/features/auth/ui/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -35,7 +34,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           PageView(
             onPageChanged: (index) {
               setState(() {
-                onLastPage = (index == 2);
+                onLastPage = (index == 3);
               });
             },
             controller: _controller,

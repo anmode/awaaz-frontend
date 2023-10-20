@@ -34,7 +34,7 @@ class _AnimatedLargeButtonState extends State<AnimatedLargeButton> {
         setState(() {
           isAnimate = false;
         });
-        widget.function;
+        widget.function();
       },
       child: AnimatedContainer(
         padding: EdgeInsets.symmetric(vertical: getScreenWidth(context) * 0.04),

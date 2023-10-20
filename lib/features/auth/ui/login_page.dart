@@ -1,6 +1,6 @@
 import 'package:awaaz/constants/colors.dart';
-import 'package:awaaz/constants/dimensions.dart';
 import 'package:awaaz/features/auth/widgets/animated_large_button.dart';
+import 'package:awaaz/features/home/ui/home_page.dart';
 import 'package:awaaz/features/on_boarding/widgets/intro_text.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +31,14 @@ class _LoginPageState extends State<LoginPage> {
               ),
               AnimatedLargeButton(
                 text: 'Continue with google!',
-                function: () {},
+                function: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
+                  );
+                },
               )
             ],
           ),
